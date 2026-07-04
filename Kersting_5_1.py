@@ -52,31 +52,31 @@ def format_complex_for_excel(z):
 # complex number notation.
 d = np.zeros(5, dtype=complex)
 
-# # Practice problem 4.1
-# d[1] = 29j        # Line 1 - Phase a
-# d[2] = 7 + 29j    # Line 2 - Phase b
-# d[3] = 2.5 + 29j  # Line 3 - Phase c
-# d[4] = 4 + 25j    # Line 4 - neutral
-
-# pc_res = 0.1859  # Ohm/mile for phase conductor
-# pc_gmr = 0.0313  # GMR for phase conductor in feet
-# pc_radius = 0.927/2/12  # radius of phase conductor in feet
-# nc_res = 0.592   # Ohm/mile for neutral conductor
-# nc_gmr = 0.00814 # GMR for neutral conductor in feet
-# nc_radius = 0.563/2/12  # radius of neutral conductor in feet
-
-# Example 4.1
+# Practice problem 4.1
 d[1] = 29j        # Line 1 - Phase a
-d[2] = 2.5 + 29j  # Line 2 - Phase b
-d[3] = 7 + 29j    # Line 3 - Phase c
+d[2] = 7 + 29j    # Line 2 - Phase b
+d[3] = 2.5 + 29j  # Line 3 - Phase c
 d[4] = 4 + 25j    # Line 4 - neutral
 
-pc_res = 0.306  # Ohm/mile for phase conductor
-pc_gmr = 0.0244  # GMR for phase conductor in feet
-pc_radius = 0.721/2/12  # radius of phase conductor in feet
-nc_res = 0.5920   # Ohm/mile for neutral conductor
+pc_res = 0.1859  # Ohm/mile for phase conductor
+pc_gmr = 0.0313  # GMR for phase conductor in feet
+pc_radius = 0.927/2/12  # radius of phase conductor in feet
+nc_res = 0.592   # Ohm/mile for neutral conductor
 nc_gmr = 0.00814 # GMR for neutral conductor in feet
 nc_radius = 0.563/2/12  # radius of neutral conductor in feet
+
+# # Example 4.1
+# d[1] = 29j        # Line 1 - Phase a
+# d[2] = 2.5 + 29j  # Line 2 - Phase b
+# d[3] = 7 + 29j    # Line 3 - Phase c
+# d[4] = 4 + 25j    # Line 4 - neutral
+
+# pc_res = 0.306  # Ohm/mile for phase conductor
+# pc_gmr = 0.0244  # GMR for phase conductor in feet
+# pc_radius = 0.721/2/12  # radius of phase conductor in feet
+# nc_res = 0.5920   # Ohm/mile for neutral conductor
+# nc_gmr = 0.00814 # GMR for neutral conductor in feet
+# nc_radius = 0.563/2/12  # radius of neutral conductor in feet
 
 # Compute the distance between the positions
 D = np.zeros((5,5), dtype=complex)
